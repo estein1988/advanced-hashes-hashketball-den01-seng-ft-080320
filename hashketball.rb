@@ -185,9 +185,10 @@ def player_stats(player_name)
 end 
 
 def players
+  players = []
   game_hash.each do |location, team_data|
-    
-  binding.pry
+    players << team_data[:players]
+  end 
 end
 
 def big_shoe_rebounds
