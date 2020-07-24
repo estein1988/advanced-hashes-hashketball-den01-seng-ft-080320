@@ -170,6 +170,7 @@ def player_numbers(team_name)
       return team_data.collect do |jersey_number|
         
   binding.pry
+      end 
     end
   end 
 end
