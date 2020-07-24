@@ -176,6 +176,7 @@ end
 
 def player_stats(player_name)
   game_hash
+  binding.pry
 end 
 
 #def players
