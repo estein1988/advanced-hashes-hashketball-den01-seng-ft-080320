@@ -186,7 +186,8 @@ end
 
 def players
   game_hash.each do |location, team_data|
-    players << team_data[:players]
+    team_data[:players].each do |player|
+      
   end
   players 
 end
