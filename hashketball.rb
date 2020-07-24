@@ -169,7 +169,6 @@ def player_numbers(team_name)
     if team_data[:team_name] == team_name 
       return team_data[:players].collect do |player|
         player[:number]
-      binding.pry
       end 
     end
   end 
