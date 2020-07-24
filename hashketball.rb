@@ -179,6 +179,7 @@ def player_stats(player_name)
     team_data.each do |player|
       
   binding.pry
+    end 
   end 
 end 
 
