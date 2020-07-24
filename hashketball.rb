@@ -185,7 +185,8 @@ def player_stats(player_name)
 end 
 
 def players
-  game_hash.each do 
+  game_hash
+  binding.pry
 end
 
 def big_shoe_rebounds
