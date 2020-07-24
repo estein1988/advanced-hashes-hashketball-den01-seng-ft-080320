@@ -184,6 +184,14 @@ def player_stats(player_name)
   end 
 end 
 
+def players
+  game_hash.each do 
+end
+
+def big_shoe_rebounds
+  players.max_by{|k| k[:shoe]}[:rebounds]
+end
+
 #def players
 #  players = game_hash[:home][:players].concat game_hash[:away][:players]
 #end
@@ -232,7 +240,3 @@ end
 #def player_stats(player_name)
 #  player = find_player(player_name)
 #end 
-
-def big_shoe_rebounds
-  players.max_by{|k| k[:shoe]}[:rebounds]
-end
