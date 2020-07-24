@@ -169,21 +169,20 @@ def player_numbers(team_name)
     if team_data[:team_name] == team_name 
       return team_data[:players].collect do |jersey_number|
         [:number]
-  binding.pry
       end 
     end
   end 
 end
 
-def players
-  players = game_hash[:home][:players].concat game_hash[:away][:players]
-end
+#def players
+#  players = game_hash[:home][:players].concat game_hash[:away][:players]
+#end
 
-def find_player(player_name)
-  players.find do |player|
-    player[:player_name] == player_name
-  end
-end 
+#def find_player(player_name)
+#  players.find do |player|
+#    player[:player_name] == player_name
+#  end
+#end 
 
 #def num_points_scored(player_name)
 #  player = find_player(player_name)
@@ -195,15 +194,15 @@ end
 #  player[:shoe]
 #end 
 
-def teams 
-  game_hash.values
-end 
+#def teams 
+#  game_hash.values
+#end 
 
-def find_team(team_name)
-  teams.find do |team|
-    team[:team_name] == team_name
-  end
-end
+#def find_team(team_name)
+#  teams.find do |team|
+#    team[:team_name] == team_name
+#  end
+#end
 
 #def team_colors(team_name)
 #  team = find_team(team_name) 
