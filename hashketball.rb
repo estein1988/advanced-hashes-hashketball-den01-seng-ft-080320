@@ -190,6 +190,7 @@ def players
     players << team_data[:players]
   end
   players 
+  binding.pry
 end
 
 def big_shoe_rebounds
